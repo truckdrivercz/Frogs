@@ -55,6 +55,7 @@
     left: 50%;
     width: 100px;
     height: auto;
+    transition: 2s;
 }
 
 #grass{
