@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#waterpool{
+    width: 100%;
+    height: 750px;
+}
+
+#lilypad-one{
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    width: 100px;
+    height: auto;
+}
+
+#lilypad-two{
+    position: absolute;
+    top: 550px;
+    left: 40%;
+    width: 100px;
+    height: auto;
+}
+
+#lilypad-three{
+    position: absolute;
+    top: 450px;
+    left: 60%;
+    width: 100px;
+    height: auto;
+}
+
+#lilypad-four{
+    position: absolute;
+    top: 350px;
+    left: 40%;
+    width: 100px;
+    height: auto;
+}
+
+#lilypad-five{
+    position: absolute;
+    top: 250px;
+    left: 60%;
+    width: 100px;
+    height: auto;
+}
+
+#frog{
+    display: block;
+    position: absolute;
+    top: 850px;
+    left: 50%;
+    width: 100px;
+    height: auto;
+}
+
+#grass{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 750px;
+}
