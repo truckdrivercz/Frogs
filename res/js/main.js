@@ -1,10 +1,10 @@
 let frog = document.getElementById("frog");
 
 window.onload = () => {
-    moveToFistLily();
+    moveToFirstLily();
 }
 
-let moveToFistLily = () => {
+let moveToFirstLily = () => {
     frog.style.left = 50 + "%";
     frog.style.top = 650 + "px";
 }
