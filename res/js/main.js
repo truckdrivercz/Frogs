@@ -1,6 +1,11 @@
 const frog = document.getElementById("frog");
+const start = document.getElementById("start");
+/*window.onload = () => {
 
-window.onload = () => {
+};*/
+
+start.onclick = () =>{
+    start.style.display = "none";
     const loopAnimation = () => {
         moveToFirstLily();
         
@@ -21,25 +26,33 @@ window.onload = () => {
         }, 8000);
 
         setTimeout(() => {
-            moveToFourthLily();
+            moveToSixth();
         }, 10000);
 
         setTimeout(() => {
-            moveToThirdList();
+            moveToFifthLily();
         }, 12000);
 
         setTimeout(() => {
-            moveToSecondLily();
+            moveToFourthLily();
         }, 14000);
 
         setTimeout(() => {
-            moveToFirstLily();
+            moveToThirdList();
         }, 16000);
+
+        setTimeout(() => {
+            moveToSecondLily();
+        }, 18000);
+
+        setTimeout(() => {
+            moveToFirstLily();
+        }, 20000);
     };
 
     loopAnimation();
-    setInterval(loopAnimation, 16000); // Spouští animaci znovu každých 16 sekund
-};
+    setInterval(loopAnimation, 20000); // Spouští animaci znovu každých 16 sekund
+}
 
 const moveToFirstLily = () => {
     frog.style.left = 50 + "%";
@@ -65,3 +78,8 @@ const moveToFifthLily = () => {
     frog.style.left = 60 + "%";
     frog.style.top = 250 + "px";
 };
+
+const moveToSixth = () => {
+    frog.style.left = 50 + "%";
+    frog.style.top = 50 + "px";
+}
