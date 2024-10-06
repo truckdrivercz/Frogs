@@ -1,30 +1,67 @@
-let frog = document.getElementById("frog");
+const frog = document.getElementById("frog");
 
 window.onload = () => {
-    moveToFirstLily();
-}
+    const loopAnimation = () => {
+        moveToFirstLily();
+        
+        setTimeout(() => {
+            moveToSecondLily();
+        }, 2000);
 
-let moveToFirstLily = () => {
+        setTimeout(() => {
+            moveToThirdList();
+        }, 4000);
+
+        setTimeout(() => {
+            moveToFourthLily();
+        }, 6000);
+
+        setTimeout(() => {
+            moveToFifthLily();
+        }, 8000);
+
+        setTimeout(() => {
+            moveToFourthLily();
+        }, 10000);
+
+        setTimeout(() => {
+            moveToThirdList();
+        }, 12000);
+
+        setTimeout(() => {
+            moveToSecondLily();
+        }, 14000);
+
+        setTimeout(() => {
+            moveToFirstLily();
+        }, 16000);
+    };
+
+    loopAnimation();
+    setInterval(loopAnimation, 16000); // Spouští animaci znovu každých 16 sekund
+};
+
+const moveToFirstLily = () => {
     frog.style.left = 50 + "%";
     frog.style.top = 650 + "px";
-}
+};
 
-let moveToSecondLily = () => {
+const moveToSecondLily = () => {
     frog.style.left = 40 + "%";
     frog.style.top = 550 + "px";
-}
+};
 
-let moveToThirdList = () =>{
+const moveToThirdList = () => {
     frog.style.left = 60 + "%";
     frog.style.top = 450 + "px";
-}
+};
 
-let moveToFourthLily = () => {
+const moveToFourthLily = () => {
     frog.style.left = 40 + "%";
     frog.style.top = 350 + "px";
-}
+};
 
-let moveToFifthLily = () => {
+const moveToFifthLily = () => {
     frog.style.left = 60 + "%";
-    frog.style.top = 250 + "px"
-}
+    frog.style.top = 250 + "px";
+};

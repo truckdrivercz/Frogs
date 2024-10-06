@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #waterpool{
@@ -56,6 +57,7 @@
     width: 100px;
     height: auto;
     transition: 2s;
+    rotate: 360deg;
 }
 
 #grass{
