@@ -1,8 +1,5 @@
 const frog = document.getElementById("frog");
 const start = document.getElementById("start");
-/*window.onload = () => {
-
-};*/
 
 start.onclick = () =>{
     start.style.display = "none";
